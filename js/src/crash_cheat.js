@@ -2,9 +2,9 @@
 * @Author: 不忘初心
 * @Date:   2019-04-03 19:53:51
 * @Last Modified by:   不忘初心
-* @Last Modified time: 2019-04-03 19:54:22
+* @Last Modified time: 2019-04-03 20:00:55
 */
-<!--崩溃欺骗-->
+// 崩溃欺骗
  var OriginTitle = document.title;
  var titleTime;
  document.addEventListener('visibilitychange', function () {
