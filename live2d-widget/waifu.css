@@ -1,7 +1,7 @@
 #waifu {
 	position: fixed;
 	bottom: -3px;
-	right: 0;
+	right: 10px;
 	z-index: 1;
 	line-height: 0;
 	transition: bottom .3s ease-in-out;
@@ -48,7 +48,7 @@
 #waifu-tool {
 	color: #aaa;
 	top: 70px;
-	right: -10px;
+	left: -10px;
 	position: absolute;
 	opacity: 0;
 	transition: opacity 1s;
