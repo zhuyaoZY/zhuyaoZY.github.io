@@ -86,18 +86,19 @@
 
 
 
-<meta name="description" content="⦁    Shell和vi什么是shell 在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。">
+<meta name="description" content="⦁    Shell和vi⦁    什么是shell在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。  ⦁    shell分类1、图形界面shell：通过提供友好的可视化界面，调用相应应用程序，如windows系列操作系统，Linux系统">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git版本控制">
 <meta property="og:url" content="http://yoursite.com/2019/04/12/Git版本控制/index.html">
 <meta property="og:site_name" content="朱瑶的博客">
-<meta property="og:description" content="⦁    Shell和vi什么是shell 在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。">
+<meta property="og:description" content="⦁    Shell和vi⦁    什么是shell在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。  ⦁    shell分类1、图形界面shell：通过提供友好的可视化界面，调用相应应用程序，如windows系列操作系统，Linux系统">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2019/04/12/Git版本控制/image2.jpeg">
-<meta property="og:updated_time" content="2019-04-12T12:53:47.181Z">
+<meta property="og:image" content="http://yoursite.com/2019/04/12/Git版本控制/image3.jpeg">
+<meta property="og:updated_time" content="2019-04-13T07:27:57.537Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git版本控制">
-<meta name="twitter:description" content="⦁    Shell和vi什么是shell 在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。">
+<meta name="twitter:description" content="⦁    Shell和vi⦁    什么是shell在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。  ⦁    shell分类1、图形界面shell：通过提供友好的可视化界面，调用相应应用程序，如windows系列操作系统，Linux系统">
 <meta name="twitter:image" content="http://yoursite.com/2019/04/12/Git版本控制/image2.jpeg">
 
 
@@ -348,9 +349,22 @@
       
 
       
-        <h2 id="⦁-Shell和vi"><a href="#⦁-Shell和vi" class="headerlink" title="⦁    Shell和vi"></a>⦁    Shell和vi</h2><p><strong>什么是shell</strong></p>
-<p>在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。</p>
+        <h1 id="⦁-Shell和vi"><a href="#⦁-Shell和vi" class="headerlink" title="⦁    Shell和vi"></a>⦁    Shell和vi</h1><h3 id="⦁-什么是shell"><a href="#⦁-什么是shell" class="headerlink" title="⦁    什么是shell"></a>⦁    什么是shell</h3><p>在计算机科学中，Shell俗称壳，用来区别于Kernel（核），是指“提供使用者使用界面”的软件（命令解析器）。它类似于DOS下的command和后来的cmd.exe。它接收用户命令，然后调用相应的应用程序。</p>
 <p><img src="/2019/04/12/Git版本控制/image2.jpeg" alt></p>
+<h3 id="⦁-shell分类"><a href="#⦁-shell分类" class="headerlink" title="⦁    shell分类"></a>⦁    shell分类</h3><p>1、图形界面shell：通过提供友好的可视化界面，调用相应应用程序，如windows系列操作系统，Linux系统上的图形化应用程序GNOME、KDE等。<br>2、命令行shell：通过键盘输入特定命令的方式，调用相应的应用程序，如windows系统的cmd.exe、Windows PowerShell，Linux系统的Bourne shell ( sh)、Bourne Again shell ( bash)等。</p>
+<h3 id="⦁-认识bash这个shell"><a href="#⦁-认识bash这个shell" class="headerlink" title="⦁    认识bash这个shell"></a>⦁    认识bash这个shell</h3><p>在window系统下使用bash，需要一个软件，这个软件模拟集成了bash大部分命令。<br>各个 shell 的功能都差不多， Linux 默认使用 bash ，所以我们主要学习bash的使用。</p>
+<p><strong>1、bash命令格式</strong><br>命令 [-options]  [参数]，如：tar  zxvf  demo.tar.gz<br>查看帮助：命令 –help</p>
+<p><strong>2、bash常见命令</strong><br>pwd (Print Working Directory) 查看当前目录<br>cd (Change Directory) 切换目录，如 cd /etc<br>ls (List) 查看当前目录下内容，如 ls -al<br>mkdir (Make Directory) 创建目录，如 mkdir blog<br>touch 创建文件，如 touch index.html<br>cat 查看文件全部内容，如 cat index.html<br>more/less 查看文件，如more /etc/passwd、less /etc/passwd<br>rm (remove) 删除文件，如 rm index.html、rm -rf  blog<br>rmdir (Remove Directory) 删除文件夹，只能删除空文件夹，不常用<br>mv (move) 移动文件或重命名，如 mv index.html ./demo/index.html<br>cp (copy) 复制文件，cp index.html ./demo/index.html<br>head 查看文件前几行，如 head -5 index.html<br>tail 查看文件后几行 –n –f，如 tail index.html、tail -f -n 5 index.html<br>tab 自动补全，连按两次会将所有匹配内容显示出来<br>history 查看操作历史<br>> 和 &gt;&gt;重定向，如echo hello world! &gt; README.md，&gt;覆盖 &gt;&gt;追加<br>wget 下载，如wget <a href="https://nodejs.org/dist/v4.4.0/node-v4.4.0.tar.gz" target="_blank" rel="noopener">https://nodejs.org/dist/v4.4.0/node-v4.4.0.tar.gz</a><br>tar 解压缩，如tar zxvf node-v4.4.0.tar.gz<br>curl 网络请求，如curl <a href="http://www.baidu.com" target="_blank" rel="noopener">http://www.baidu.com</a><br>whoami 查看当前用户<br>| 管道符可以将多个命令连接使用，上一次（命令）的执行结果当成下一次（命令）的参数。<br>grep 匹配内容，一般结合管道符使用</p>
+<h3 id="⦁-vi编辑器"><a href="#⦁-vi编辑器" class="headerlink" title="⦁    vi编辑器"></a>⦁    vi编辑器</h3><p>如同Windows下的记事本，vi编辑器是Linux下的标配，通过它我们可以创建、编辑文件。它是一个随系统一起安装的文本编辑软件。<br><strong>1、三种模式</strong><br>vi编辑器提供了3种模式，分别是命令模式、插入模式、底行模式，每种模式下用户所能进行的操作是不一样的。</p>
+<p>3种模式的切换如下图所示：<br> <img src="/2019/04/12/Git版本控制/image3.jpeg" alt></p>
+<p>通过上图我们发现，输入模式是不能直接切换到末行模式的，必须要先切回到命令模式（按ESC键）</p>
+<p><strong>2、使用vi编辑器</strong><br>    a) 打开/创建文件， vi 文件路径<br>    b) 底行模式 :w保存，:w filenme另存为<br>    c) 底行模式 :q退出<br>    d) 底行模式 :wq保存并退出<br>    e) 底行模式 :e! 撤销更改，返回到上一次保存的状态<br>    f) 底行模式 :q! 不保存强制退出<br>    g) 底行模式 :set nu 设置行号<br>    h) 命令模式 ZZ（大写）保存并退出<br>    i) 命令模式 u辙销操作，可多次使用<br>    j) 命令模式 dd删除当前行<br>    k) 命令模式 yy复制当前行<br>    l) 命令模式 p 粘贴内容<br>    m) 命令模式 ctrl+f向前翻页<br>    n) 命令模式 ctrl+b向后翻页<br>    o) 命令模式 i进入编辑模式，当前光标处插入<br>    p) 命令模式 a进入编辑模式，当前光标后插入<br>    q) 命令模式 A进入编辑模式，光标移动到行尾<br>    r) 命令模式 o进入编辑模式，当前行下面插入新行<br>    s) 命令模式 O进入编辑模式，当前行上面插入新行<br>当我们处在编辑模式的情况下，和我们在Windows编辑器的使用相似。</p>
+<h3 id="⦁-SSH"><a href="#⦁-SSH" class="headerlink" title="⦁    SSH"></a>⦁    SSH</h3><p>SSH是一种网络协议，用于计算机之间的加密登录。<br>SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文针对的是OpenSSH，它是自由软件，应用非常广泛。<br>如果要在Windows系统中使用SSH，会用到另一种软件PuTTY，我们后面用到的Git客户也集成了SSH<br>格式：ssh user@host<br>user 代表真实存在的用户host代表要登录的远程计算机<br>常见有两种加密技术，分别是对称性加密和非对称性加密，SSH属于后者。<br>对称加密算法在加密和解密时使用的是同一个密钥；而非对称加密算法需要两个密钥来进行加密和解密，这两个秘钥分别是公开密钥（public key，简称公钥）和私有密钥（private key，简称私钥）。</p>
+<p><strong>工作原理</strong><br>公钥和私钥是成对出现，可以通过ssh-keygen -t rsa来创建，既可以通过密钥来加密数据，也可以通过私钥来加密数据，如果是以公钥进行的数据加密，只能与之相对应的私钥才可以解密，相反如果以私钥进行的数据加密，则只能与之对应的公钥才可以将数据进行解密，这样就可以提高信息传递的安全性。</p>
+<p><strong>免密码登录</strong><br>我们可以将本地机器上的公钥保存到特定的远程计算机上，这样当我们再次登录访问这台远程计算机时就可以实现免密码登录了。</p>
+<p>1、ssh-keygen -t rsa会创建公钥和密钥（默认在用户目录/.ssh目录下）</p>
+<p>2、ssh-copy-id user@host添加到对应远程主机的用户目录/.ssh目录下</p>
+<p>3、也可以登录远程主机，进入到用户目录/.ssh目录下手动创建authorized_keys文件，并将自已的公钥粘入该文件。<br>这部分具体实现细节，参照我的演示有个印象就可以了。 </p>
 
       
     </div>
@@ -531,7 +545,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#⦁-Shell和vi"><span class="nav-number">1.</span> <span class="nav-text">⦁    Shell和vi</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#⦁-Shell和vi"><span class="nav-number">1.</span> <span class="nav-text">⦁    Shell和vi</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#⦁-什么是shell"><span class="nav-number">1.0.1.</span> <span class="nav-text">⦁    什么是shell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#⦁-shell分类"><span class="nav-number">1.0.2.</span> <span class="nav-text">⦁    shell分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#⦁-认识bash这个shell"><span class="nav-number">1.0.3.</span> <span class="nav-text">⦁    认识bash这个shell</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#⦁-vi编辑器"><span class="nav-number">1.0.4.</span> <span class="nav-text">⦁    vi编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#⦁-SSH"><span class="nav-number">1.0.5.</span> <span class="nav-text">⦁    SSH</span></a></li></ol></li></ol></div>
             
 
           </div>
